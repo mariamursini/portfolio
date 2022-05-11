@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+    <title>Maria Eduarda Mursini</title>
+</head>
+<body>
+        <header>
+            <div>
+                <img src="Logo" alt="">
+            </div>
+            <ul>
+                <li> 
+                    <a href="https://github.com/mariamursini">github</a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/maria-eduarda-mursini/">linkedin</a>
+                </li>
+                <li>
+                    <a href="mailto:memursini@gmail.com">email </a>
+                </li>
+                <li>
+                    <a href="https://www.behance.net/mariaeduardam">behance </a>
+                </li>
+            </ul>
+        </header>
+        <main>
+         <section class="container"> 
+            <div class="name">
+                <h1>Maria Eduarda Mursini</h1>
+                <h5>Designer e Desenvolvedora Front End Jr</h5>
+            </div>
+
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fa-solid fa-arrow-down-long"></i>
+            </div>
+
+            <div style="display: none;" id="about">
+               <p>Formada em Design Gráfico pela Unisagrado e estou em transição de carreira para a área de Tecnologia. Atualmente atuo como Assistente de Marketing na Unimed Centro-Oeste Paulista.
+                Minha história com tecnologia iniciou-se em 2021, no desenvolvimento do meu TCC "Redesign da Interface do Amazon Prime Vídeo com Princípios de UX e UI Design". A partir disso, direcionei meus estudos para a área de front-end. 
+                Em busca de aprofundar meus conhecimentos nas tecnologias utilizadas no FrontEnd (HTML, CSS e Javascript), me inscrevi no programa da VTEX, o Hiring Coders #3. 
+                Me considero uma profissional dinâmica e curiosa, sempre em busca de conhecimento e procurando aprender de forma auto ditada.  
+                Por fim, meu inglês é avançado e estou muito animada para continuar minha trilha na tecnologia :)</p>     
+            </div>
+
+            <div class="form">
+                <div>
+                    <p>deixe seu contato!</p>
+                </div>
+                <form action=""></form>
+                    <input type="text" placeholder="seu melhor email! :)">
+                    <button>Enviar</button>
+            </div>
+         </section>   
+        </main>
+
+        <script>
+            function displayAbout() {
+                var arrow = document.getElementById('animation');
+                arrow.classList.toggle('rotate')
+                var display = document.getElementById('about');
+                display.classList.toggle('active')
+            }
+        </script>
+    
+</body>
+</html>
